@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/workshop-database-introduction/static/js/main.f985c40a.chunk.js",
+    "main.js.map": "/workshop-database-introduction/static/js/main.f985c40a.chunk.js.map",
+    "runtime~main.js": "/workshop-database-introduction/static/js/runtime~main.68f9ff25.js",
+    "runtime~main.js.map": "/workshop-database-introduction/static/js/runtime~main.68f9ff25.js.map",
+    "static/js/2.42ef4b40.chunk.js": "/workshop-database-introduction/static/js/2.42ef4b40.chunk.js",
+    "static/js/2.42ef4b40.chunk.js.map": "/workshop-database-introduction/static/js/2.42ef4b40.chunk.js.map",
+    "index.html": "/workshop-database-introduction/index.html",
+    "precache-manifest.43530b36d7eed7316936230e5d7a79be.js": "/workshop-database-introduction/precache-manifest.43530b36d7eed7316936230e5d7a79be.js",
+    "service-worker.js": "/workshop-database-introduction/service-worker.js"
+  }
+}
