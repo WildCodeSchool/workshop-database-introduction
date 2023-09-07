@@ -1,40 +1,46 @@
-# Workshop template
+# Introduction
 
-A React-based workshop template. It basically reads a markdown file, splits it into steps, and formats it nicely.
+Cet atelier te permettra de découvrir et de manipuler une base de données.  
+Dans un premier temps, tu utiliseras uniquement le mode CLI !  
+Commence donc par ouvrir ton terminal.
+{: .alert-info }
 
-An example of what you get: <https://wildcodeschool.github.io/initiation-javascript/>
+## La quête du Graal commence
+> **Rappel** : par convention, les noms de bases, tables, champs, doivent être en anglais, au singulier, et en snake_case
 
-For the non-JS out there, you need Node.js, which you *should* install with [NVM](https://github.com/nvm-sh/nvm) (Linux/MacOS) or [NVM-Windows](https://github.com/coreybutler/nvm-windows).
+- Crée une base de données que tu nommeras `kaamelott`
+- Dans cette nouvelle BDD, crée une table `knight` qui contiendra les champs suivants :
+    - `id` INT (clé primaire, autoincrémentée)
+    - `name` VARCHAR(80), NOT NULL
+    - `age` INT, NOT NULL
 
-## 1. Create the new workshop repository
+## Recrutement de chevaliers
+Ajoute les chevaliers suivants à l'aide d'une ou plusieurs requêtes (INSERT)
+- Arthur 40ans
+- Perceval 35 ans
+- Lancelot 38 ans
+- ... et d'autres si tu le souhaites
 
-**Don't fork this repository**.
+## On fait l'appel
+- Récupère la liste des chevaliers (SELECT)
+- C'est l'anniversaire de Perceval, modifie son âge en 36 ans (UPDATE)
+- Affiche uniquement les chevaliers de plus de 37 ans (utilisation de WHERE)
 
-Use the `use this template` git button!
+## Modification de table pas vraiment ronde
+- Ajoute un champ `is_dubbed` (est adoubé) de type BOOLEAN et **nullable** (ALTER)
+- Passe la valeur de `is_dubbed` à **true** pour tous les chevaliers
+- Tu t'aperçois que Perceval n'est pas adoubé, passe uniquement ce chevalier à **false**
 
-## 2. Change its parameters
+## Au bûcher !
 
-Clone the repository locally. Then, in `package.json`, replace `workshop-template` with your own workshop URL (e.g. `farting-unicorns`) in the `homepage` value (and also in `name` but that doesn't matter).
+![kaamelott](aubucher.gif)
 
-## 3. Edit it!
+- Lancelot a quitté la table ronde, supprime-le de la table `knight` (DELETE)
+- Vide la table des chevaliers sans la supprimer (TRUNCATE)
+- Supprime définitivement la table des chevaliers (DROP)
 
-The content is located in `public/content.md`.
-
-You just have to follow its conventions:
-
-* `#` for title, `##` for subtitle
-* The first `####` and content below will be displayed as an introduction.
-* **All the following** `####` and content **will be displayed as a card**, and their titles automagically added to the left nav menu.
-
-## 4. Preview it locally
-
-* `npm install` or `yarn` to install dependencies
-* `npm start` or `yarn start` to launch
-
-## 5. Push and deploy it!
-
-- Once pushed, you should just have to run `npm run deploy` or `yarn deploy`.
-- It will automatically create a `gh-branch` on Github repository. 
-- Use Github Page (in Github Settings) and select `gh-branch`. Wait few minutes, then the workshop will be available, congrats! 
-
-![Thanos - That's all folks](https://cdn.shopify.com/s/files/1/0073/2452/products/thatsall_1024x1024.jpg?v=1563557232)
+## OPTION : Continue à manipuler autant que possible
+- Crée la table `weapon`
+  - `id` INT (clé primaire, autoincrémentée)
+  - `name` VARCHAR(50)
+- Ajoute, modifie et supprime des armes (ex : épée, arc, lance, catapulte...) 
