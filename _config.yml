@@ -17,3 +17,4 @@ description: 'partie I : Introduction aux BDD et SQL'
 main_image: 'table_ronde.png' # http or relative path to image
 show_clone: false
 show_toc: true
+lang: fr
